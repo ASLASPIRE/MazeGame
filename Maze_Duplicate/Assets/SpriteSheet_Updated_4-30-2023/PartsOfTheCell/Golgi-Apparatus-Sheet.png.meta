@@ -1,0 +1,1599 @@
+fileFormatVersion: 2
+guid: 16d4f85c488910f43a0d3798372a412e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8e057ee361a1f408c8d34a349b3ce4
+      internalID: 27286964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2e1cc07f5ec1c4c864cee2165e72b6
+      internalID: -301895925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59a6a8ec0fee9541a8ed8d18c248bd1
+      internalID: 2081855173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f0014a3d660c84287dddf05c364e90
+      internalID: -775555513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f97f5aeeed64d4595596f0bf104378
+      internalID: 308453502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306a0efc75717014a9dd3761d491a57f
+      internalID: 1144010479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8bdc2d673e8080438982a062e093c98
+      internalID: -761700391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087a2d3ebc043aa47a5a218fbdf597c2
+      internalID: -1328782317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc3f7f1d3e056b4594a8027cbc4895e
+      internalID: -377671032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32afc14bed9af5c4088615daa64830b1
+      internalID: -1938202645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79afa96a0895b4847b389842cf0e1a99
+      internalID: -622264252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dc268c153b4dc479c4cb229a9b522c
+      internalID: -2067651856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37276e140ffb58b4580f059eb7698bc7
+      internalID: 83074589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fee77bd8fb664e4185ffba40cfba3f3
+      internalID: 1523020205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f414472062fb0cc40b50fc4bb275eb9f
+      internalID: 33140918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73a3ee298f71fc46a3dcc5826d59802
+      internalID: -1514643878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc623f2730b7b864c906bd52ed157759
+      internalID: -769101538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e83ad46000f4447911cede2c963655
+      internalID: -717471455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21932eb7b2633245a64713df7da1bae
+      internalID: -828668201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53625f7785a144641bbfcb3773aafff3
+      internalID: -1535757277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfcf944ab9b02443a62c632ebb156d8
+      internalID: -728759401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518f027ec1e90b3438003567b3834c85
+      internalID: -823504615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db36bd38eb5f3440b9d738b802c325b
+      internalID: 1202768106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e8f4649a12cc04cabe9a0fa5c49c2e
+      internalID: -161352981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b63c41bafe4ee4182f9f70c4d98fd2
+      internalID: 653555849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a9777dda042544985e8af306e57375
+      internalID: -183449112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b000ebb193ecbe4f8c203a84b60c43c
+      internalID: 722754809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb5888066a58d04dac9fb0ec26193bb
+      internalID: 1537488704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01826ea7e47fec439805b31ec8c543b
+      internalID: 1627685188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd9dce847fd2e144b4ebc26bbd25b76
+      internalID: 898896293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d5fd04cdcd09043a1960bc2f8f4d22
+      internalID: 544600961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a93ed780df3b084e8296f697b7a9194
+      internalID: 1407818906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6191abb6dc489f478f0ff0d99a6fd34
+      internalID: 1024632578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45d5cf32457a4e4295eb24010b0b384
+      internalID: -1132158145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18da071024312f74ca2b0b4bfae28203
+      internalID: 768677964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0517793540e32ee4fbc0a3d633f5c2d8
+      internalID: -2105327412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914ed6258f3f894468b90268b4487b91
+      internalID: -1529078696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a5460eecd1697489379af5f727fccf
+      internalID: 1355450416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39498fe24ecb5584aa820316aa384aab
+      internalID: 919886099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb97d2d194367144ab8126b47d9adfa
+      internalID: -380873794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 715ae29f0c9e458469301b41a1f78ba0
+      internalID: -1837237313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dac98d2142e4e547beb1e81bbd595ba
+      internalID: -2055795314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0ce0d611cf469b40b5096fa0faff72f
+      internalID: 1043281435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69fbd6d462e603488c186a5d1088733
+      internalID: -1171781869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a652a86d6e6da61479d11dc4074393a8
+      internalID: -1115649993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce400c48eed8b04a98cb64d39607d7f
+      internalID: 1061725078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0249559a0eadc4fb2ae395ee142c3e
+      internalID: 827298933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670f832ceb456484389c69cb65e09622
+      internalID: -996766671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418860372ca4c00428ab560f81a44f31
+      internalID: 1291554052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c983decab1e20346862aeb2ca61d58c
+      internalID: 1640007981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8310ef049df55eb4e96be205f5a7f5fd
+      internalID: 1284367912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e231017ad1cbd44b887045185f6c14
+      internalID: -35180097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee67e293bc77ef940aaec95525f58e95
+      internalID: 724919703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47459415e25d96447b6b0db68fd26c1e
+      internalID: -1487056631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc8233639ff2cc4c9e9489f9d91e28b
+      internalID: 178172363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0252d80a1ed484caff6ea90d969c04
+      internalID: 354327395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3edc68fec35d5db4ea431b89eb150c5b
+      internalID: -367867229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d76afa5874a0044da7e543507fe48d4
+      internalID: 1844733222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804639755f458e6409b5543e54e49682
+      internalID: 852019984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf27a1fce925e74b8b5280755a635e8
+      internalID: -1734133896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b9f46273637f745a04f5049450fab0
+      internalID: -1229481708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4994899c0cd64c5418ba6544e921a285
+      internalID: -513352593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640654d9f06b54d439a2aa5f42218f13
+      internalID: -1826482398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b8187d121049045a0e03fbdcd39ee0
+      internalID: -1097153526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb1a04c6ad40644cb7ac2d44dd85442
+      internalID: -232456854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golgi-Apparatus-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160d48e629c7dab4eafeb01633d9892d
+      internalID: -1008452214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Golgi-Apparatus-Sheet_0: 27286964
+      Golgi-Apparatus-Sheet_1: -301895925
+      Golgi-Apparatus-Sheet_10: -622264252
+      Golgi-Apparatus-Sheet_11: -2067651856
+      Golgi-Apparatus-Sheet_12: 83074589
+      Golgi-Apparatus-Sheet_13: 1523020205
+      Golgi-Apparatus-Sheet_14: 33140918
+      Golgi-Apparatus-Sheet_15: -1514643878
+      Golgi-Apparatus-Sheet_16: -769101538
+      Golgi-Apparatus-Sheet_17: -717471455
+      Golgi-Apparatus-Sheet_18: -828668201
+      Golgi-Apparatus-Sheet_19: -1535757277
+      Golgi-Apparatus-Sheet_2: 2081855173
+      Golgi-Apparatus-Sheet_20: -728759401
+      Golgi-Apparatus-Sheet_21: -823504615
+      Golgi-Apparatus-Sheet_22: 1202768106
+      Golgi-Apparatus-Sheet_23: -161352981
+      Golgi-Apparatus-Sheet_24: 653555849
+      Golgi-Apparatus-Sheet_25: -183449112
+      Golgi-Apparatus-Sheet_26: 722754809
+      Golgi-Apparatus-Sheet_27: 1537488704
+      Golgi-Apparatus-Sheet_28: 1627685188
+      Golgi-Apparatus-Sheet_29: 898896293
+      Golgi-Apparatus-Sheet_3: -775555513
+      Golgi-Apparatus-Sheet_30: 544600961
+      Golgi-Apparatus-Sheet_31: 1407818906
+      Golgi-Apparatus-Sheet_32: 1024632578
+      Golgi-Apparatus-Sheet_33: -1132158145
+      Golgi-Apparatus-Sheet_34: 768677964
+      Golgi-Apparatus-Sheet_35: -2105327412
+      Golgi-Apparatus-Sheet_36: -1529078696
+      Golgi-Apparatus-Sheet_37: 1355450416
+      Golgi-Apparatus-Sheet_38: 919886099
+      Golgi-Apparatus-Sheet_39: -380873794
+      Golgi-Apparatus-Sheet_4: 308453502
+      Golgi-Apparatus-Sheet_40: -1837237313
+      Golgi-Apparatus-Sheet_41: -2055795314
+      Golgi-Apparatus-Sheet_42: 1043281435
+      Golgi-Apparatus-Sheet_43: -1171781869
+      Golgi-Apparatus-Sheet_44: -1115649993
+      Golgi-Apparatus-Sheet_45: 1061725078
+      Golgi-Apparatus-Sheet_46: 827298933
+      Golgi-Apparatus-Sheet_47: -996766671
+      Golgi-Apparatus-Sheet_48: 1291554052
+      Golgi-Apparatus-Sheet_49: 1640007981
+      Golgi-Apparatus-Sheet_5: 1144010479
+      Golgi-Apparatus-Sheet_50: 1284367912
+      Golgi-Apparatus-Sheet_51: -35180097
+      Golgi-Apparatus-Sheet_52: 724919703
+      Golgi-Apparatus-Sheet_53: -1487056631
+      Golgi-Apparatus-Sheet_54: 178172363
+      Golgi-Apparatus-Sheet_55: 354327395
+      Golgi-Apparatus-Sheet_56: -367867229
+      Golgi-Apparatus-Sheet_57: 1844733222
+      Golgi-Apparatus-Sheet_58: 852019984
+      Golgi-Apparatus-Sheet_59: -1734133896
+      Golgi-Apparatus-Sheet_6: -761700391
+      Golgi-Apparatus-Sheet_60: -1229481708
+      Golgi-Apparatus-Sheet_61: -513352593
+      Golgi-Apparatus-Sheet_62: -1826482398
+      Golgi-Apparatus-Sheet_63: -1097153526
+      Golgi-Apparatus-Sheet_64: -232456854
+      Golgi-Apparatus-Sheet_65: -1008452214
+      Golgi-Apparatus-Sheet_7: -1328782317
+      Golgi-Apparatus-Sheet_8: -377671032
+      Golgi-Apparatus-Sheet_9: -1938202645
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

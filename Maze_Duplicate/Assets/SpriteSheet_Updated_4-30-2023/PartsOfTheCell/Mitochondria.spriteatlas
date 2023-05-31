@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Mitochondria
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1989466305, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1781773802, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 2013334731, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -451073641, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1260337484, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -2090529917, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1152742393, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1804492145, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -758767894, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1633304339, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 645812793, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 2063936749, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1430991511, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1572424833, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1498268778, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 22142612, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1363321983, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 969253715, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1301561503, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1036536521, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 58522583, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 2134923683, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -730405732, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 721267195, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1167911469, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 44073250, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 922231379, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -839816151, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1845816547, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1230361634, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -2143568777, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1460350904, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 77852027, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 412661245, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 2019011254, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -2088715864, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1029036593, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -113684432, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 33229847, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 32998002, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -331042934, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1132553240, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 575512168, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -154117997, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1596921725, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1799047336, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 721459159, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -717346, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1361999809, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 381973144, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1653470851, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -570105983, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 838183142, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1660596598, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 924708536, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1361220290, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 5474367, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 857971907, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1144551828, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1882455204, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -230943623, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1284470944, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1556489973, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 814206423, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -489219429, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1031087920, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 780536809, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1215627437, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 1220933990, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -854270902, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 513402127, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -808944547, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 227445184, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1689445109, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 191245880, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 566783868, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 653653344, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 567913863, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -1840815778, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 868691906, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 712098149, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: 2039425420, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  - {fileID: -398098502, guid: 82b50567afa291b47a645b1f90b8df6a, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Mitochondria-Sheet_41
+  - Mitochondria-Sheet_40
+  - Mitochondria-Sheet_43
+  - Mitochondria-Sheet_42
+  - Mitochondria-Sheet_45
+  - Mitochondria-Sheet_44
+  - Mitochondria-Sheet_47
+  - Mitochondria-Sheet_46
+  - Mitochondria-Sheet_49
+  - Mitochondria-Sheet_48
+  - Mitochondria-Sheet_69
+  - Mitochondria-Sheet_68
+  - Mitochondria-Sheet_63
+  - Mitochondria-Sheet_62
+  - Mitochondria-Sheet_58
+  - Mitochondria-Sheet_61
+  - Mitochondria-Sheet_59
+  - Mitochondria-Sheet_60
+  - Mitochondria-Sheet_56
+  - Mitochondria-Sheet_67
+  - Mitochondria-Sheet_57
+  - Mitochondria-Sheet_66
+  - Mitochondria-Sheet_54
+  - Mitochondria-Sheet_65
+  - Mitochondria-Sheet_55
+  - Mitochondria-Sheet_64
+  - Mitochondria-Sheet_52
+  - Mitochondria-Sheet_53
+  - Mitochondria-Sheet_50
+  - Mitochondria-Sheet_51
+  - Mitochondria-Sheet_34
+  - Mitochondria-Sheet_35
+  - Mitochondria-Sheet_36
+  - Mitochondria-Sheet_9
+  - Mitochondria-Sheet_37
+  - Mitochondria-Sheet_27
+  - Mitochondria-Sheet_8
+  - Mitochondria-Sheet_78
+  - Mitochondria-Sheet_30
+  - Mitochondria-Sheet_26
+  - Mitochondria-Sheet_7
+  - Mitochondria-Sheet_81
+  - Mitochondria-Sheet_79
+  - Mitochondria-Sheet_31
+  - Mitochondria-Sheet_25
+  - Mitochondria-Sheet_6
+  - Mitochondria-Sheet_80
+  - Mitochondria-Sheet_32
+  - Mitochondria-Sheet_24
+  - Mitochondria-Sheet_5
+  - Mitochondria-Sheet_33
+  - Mitochondria-Sheet_23
+  - Mitochondria-Sheet_4
+  - Mitochondria-Sheet_82
+  - Mitochondria-Sheet_22
+  - Mitochondria-Sheet_18
+  - Mitochondria-Sheet_3
+  - Mitochondria-Sheet_21
+  - Mitochondria-Sheet_19
+  - Mitochondria-Sheet_2
+  - Mitochondria-Sheet_20
+  - Mitochondria-Sheet_1
+  - Mitochondria-Sheet_0
+  - Mitochondria-Sheet_70
+  - Mitochondria-Sheet_38
+  - Mitochondria-Sheet_71
+  - Mitochondria-Sheet_39
+  - Mitochondria-Sheet_72
+  - Mitochondria-Sheet_12
+  - Mitochondria-Sheet_73
+  - Mitochondria-Sheet_13
+  - Mitochondria-Sheet_74
+  - Mitochondria-Sheet_10
+  - Mitochondria-Sheet_75
+  - Mitochondria-Sheet_29
+  - Mitochondria-Sheet_11
+  - Mitochondria-Sheet_76
+  - Mitochondria-Sheet_28
+  - Mitochondria-Sheet_16
+  - Mitochondria-Sheet_77
+  - Mitochondria-Sheet_17
+  - Mitochondria-Sheet_14
+  - Mitochondria-Sheet_15
+  m_RenderDataMap: {}
+  m_Tag: Mitochondria
+  m_IsVariant: 0

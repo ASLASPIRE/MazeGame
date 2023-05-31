@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Organelle
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -310152020, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 546147057, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -870369873, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1083094680, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 332139637, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 888754881, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1651253156, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2138316880, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1818575283, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2049765035, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2049329075, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1541597018, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -287043868, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1175332720, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1723103395, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1593683852, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 768685666, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1009541558, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1224414715, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 306715016, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1428143637, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 409206023, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1012529352, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 715225096, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1987814755, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -38845228, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1523752956, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1778709700, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2067508262, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2003516608, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -559954720, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1090027254, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1070456965, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -652718033, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1049668674, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 696244713, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1426597099, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1218438485, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -480214321, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2127658729, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1651904350, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -926303332, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1497838188, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 473735966, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1145103010, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1050397375, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1949530651, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1870435, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1035584983, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1746039950, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -351666736, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1629630520, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -826759334, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 500521350, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1549263788, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -439243354, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -77580371, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 2008934561, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -432440895, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1581669648, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1305846787, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 600364649, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -469999572, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1870926786, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1186562392, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 24202638, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 457841912, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1926771903, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -392571185, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 585815385, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1593319387, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1528471306, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1512572672, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -702248188, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2091446459, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1364784878, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -915697471, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -2045536383, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1122802808, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1055343550, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1440106380, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -742142932, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: -1596920253, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 686870853, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1130909729, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 67603733, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1128114898, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1606605502, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  - {fileID: 1015279566, guid: cd77bac35f13e2243aa89d7f7fd9c162, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Organelle-Sheet_9
+  - Organelle-Sheet_8
+  - Organelle-Sheet_7
+  - Organelle-Sheet_6
+  - Organelle-Sheet_5
+  - Organelle-Sheet_4
+  - Organelle-Sheet_3
+  - Organelle-Sheet_2
+  - Organelle-Sheet_1
+  - Organelle-Sheet_0
+  - Organelle-Sheet_41
+  - Organelle-Sheet_40
+  - Organelle-Sheet_43
+  - Organelle-Sheet_42
+  - Organelle-Sheet_34
+  - Organelle-Sheet_45
+  - Organelle-Sheet_35
+  - Organelle-Sheet_44
+  - Organelle-Sheet_36
+  - Organelle-Sheet_47
+  - Organelle-Sheet_37
+  - Organelle-Sheet_46
+  - Organelle-Sheet_30
+  - Organelle-Sheet_49
+  - Organelle-Sheet_31
+  - Organelle-Sheet_48
+  - Organelle-Sheet_32
+  - Organelle-Sheet_33
+  - Organelle-Sheet_38
+  - Organelle-Sheet_39
+  - Organelle-Sheet_58
+  - Organelle-Sheet_59
+  - Organelle-Sheet_56
+  - Organelle-Sheet_57
+  - Organelle-Sheet_54
+  - Organelle-Sheet_55
+  - Organelle-Sheet_52
+  - Organelle-Sheet_53
+  - Organelle-Sheet_50
+  - Organelle-Sheet_51
+  - Organelle-Sheet_85
+  - Organelle-Sheet_84
+  - Organelle-Sheet_87
+  - Organelle-Sheet_27
+  - Organelle-Sheet_86
+  - Organelle-Sheet_78
+  - Organelle-Sheet_26
+  - Organelle-Sheet_81
+  - Organelle-Sheet_79
+  - Organelle-Sheet_25
+  - Organelle-Sheet_80
+  - Organelle-Sheet_24
+  - Organelle-Sheet_83
+  - Organelle-Sheet_23
+  - Organelle-Sheet_82
+  - Organelle-Sheet_22
+  - Organelle-Sheet_18
+  - Organelle-Sheet_69
+  - Organelle-Sheet_21
+  - Organelle-Sheet_19
+  - Organelle-Sheet_68
+  - Organelle-Sheet_20
+  - Organelle-Sheet_70
+  - Organelle-Sheet_71
+  - Organelle-Sheet_88
+  - Organelle-Sheet_72
+  - Organelle-Sheet_12
+  - Organelle-Sheet_73
+  - Organelle-Sheet_63
+  - Organelle-Sheet_13
+  - Organelle-Sheet_74
+  - Organelle-Sheet_62
+  - Organelle-Sheet_10
+  - Organelle-Sheet_75
+  - Organelle-Sheet_61
+  - Organelle-Sheet_29
+  - Organelle-Sheet_11
+  - Organelle-Sheet_76
+  - Organelle-Sheet_60
+  - Organelle-Sheet_28
+  - Organelle-Sheet_16
+  - Organelle-Sheet_77
+  - Organelle-Sheet_67
+  - Organelle-Sheet_17
+  - Organelle-Sheet_66
+  - Organelle-Sheet_14
+  - Organelle-Sheet_65
+  - Organelle-Sheet_15
+  - Organelle-Sheet_64
+  m_RenderDataMap: {}
+  m_Tag: Organelle
+  m_IsVariant: 0

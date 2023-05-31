@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Prokaryotic
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1300305502, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -62313300, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 412573858, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1824480504, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 2090676382, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 2017103820, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 188761819, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1886838353, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 791022902, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -150267869, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 2058501992, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -211748627, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1342331037, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1402786520, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -2011255157, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1659914903, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 112556564, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1754456620, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -866686896, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 574571944, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1377123129, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -295990168, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1215707731, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 2094544991, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 245455079, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1497087481, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 327126676, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -753318710, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -957042342, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1138056039, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1487042154, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -925853270, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1891335215, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1088890943, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -779092697, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 597285113, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1377806117, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 188750395, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1269077488, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1055948007, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1737100636, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1975506379, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -665396039, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -954875513, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1660812356, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1699297479, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1124933922, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 2117896739, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -955921815, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -829910630, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1557673821, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 478613863, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1473121371, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1864384494, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 2055567999, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1265392222, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 136384498, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -695700773, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 618611997, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 655925660, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1530254554, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1373975722, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 964349767, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -2041997948, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1158249084, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -818474350, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -232856538, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1324939553, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -2046655092, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1350010533, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1283818642, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1774430367, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 925152617, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -466241342, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: 1317854774, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  - {fileID: -1779044421, guid: ee92ca3e5598a5441bd82b3d23e9c9cc, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Prokaryotic-Sheet_58
+  - Prokaryotic-Sheet_59
+  - Prokaryotic-Sheet_38
+  - Prokaryotic-Sheet_49
+  - Prokaryotic-Sheet_39
+  - Prokaryotic-Sheet_48
+  - Prokaryotic-Sheet_50
+  - Prokaryotic-Sheet_51
+  - Prokaryotic-Sheet_29
+  - Prokaryotic-Sheet_52
+  - Prokaryotic-Sheet_32
+  - Prokaryotic-Sheet_28
+  - Prokaryotic-Sheet_53
+  - Prokaryotic-Sheet_43
+  - Prokaryotic-Sheet_33
+  - Prokaryotic-Sheet_54
+  - Prokaryotic-Sheet_42
+  - Prokaryotic-Sheet_30
+  - Prokaryotic-Sheet_55
+  - Prokaryotic-Sheet_41
+  - Prokaryotic-Sheet_31
+  - Prokaryotic-Sheet_25
+  - Prokaryotic-Sheet_56
+  - Prokaryotic-Sheet_40
+  - Prokaryotic-Sheet_36
+  - Prokaryotic-Sheet_24
+  - Prokaryotic-Sheet_57
+  - Prokaryotic-Sheet_47
+  - Prokaryotic-Sheet_37
+  - Prokaryotic-Sheet_27
+  - Prokaryotic-Sheet_46
+  - Prokaryotic-Sheet_34
+  - Prokaryotic-Sheet_26
+  - Prokaryotic-Sheet_45
+  - Prokaryotic-Sheet_35
+  - Prokaryotic-Sheet_21
+  - Prokaryotic-Sheet_44
+  - Prokaryotic-Sheet_20
+  - Prokaryotic-Sheet_23
+  - Prokaryotic-Sheet_22
+  - Prokaryotic-Sheet_61
+  - Prokaryotic-Sheet_60
+  - Prokaryotic-Sheet_63
+  - Prokaryotic-Sheet_62
+  - Prokaryotic-Sheet_14
+  - Prokaryotic-Sheet_65
+  - Prokaryotic-Sheet_15
+  - Prokaryotic-Sheet_64
+  - Prokaryotic-Sheet_16
+  - Prokaryotic-Sheet_67
+  - Prokaryotic-Sheet_17
+  - Prokaryotic-Sheet_66
+  - Prokaryotic-Sheet_10
+  - Prokaryotic-Sheet_69
+  - Prokaryotic-Sheet_11
+  - Prokaryotic-Sheet_68
+  - Prokaryotic-Sheet_12
+  - Prokaryotic-Sheet_13
+  - Prokaryotic-Sheet_18
+  - Prokaryotic-Sheet_19
+  - Prokaryotic-Sheet_74
+  - Prokaryotic-Sheet_75
+  - Prokaryotic-Sheet_72
+  - Prokaryotic-Sheet_73
+  - Prokaryotic-Sheet_70
+  - Prokaryotic-Sheet_71
+  - Prokaryotic-Sheet_9
+  - Prokaryotic-Sheet_8
+  - Prokaryotic-Sheet_5
+  - Prokaryotic-Sheet_4
+  - Prokaryotic-Sheet_7
+  - Prokaryotic-Sheet_6
+  - Prokaryotic-Sheet_1
+  - Prokaryotic-Sheet_0
+  - Prokaryotic-Sheet_3
+  - Prokaryotic-Sheet_2
+  m_RenderDataMap: {}
+  m_Tag: Prokaryotic
+  m_IsVariant: 0

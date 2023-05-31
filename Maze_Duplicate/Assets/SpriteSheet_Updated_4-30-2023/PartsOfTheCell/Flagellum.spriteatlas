@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Flagellum
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 1415041508, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1937616515, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1394134091, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1822741679, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1557980370, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -656166046, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1811922524, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1727786888, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -2005926718, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -557962369, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1562990898, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 2059728829, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -2044413166, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1108226925, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1627867980, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1122769423, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1992031864, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 870091546, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 72408666, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -482523195, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 741969921, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1486943903, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 670941348, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 302442624, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 626942194, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 2024848073, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 614199649, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1619106323, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -694411740, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1439405411, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 45046251, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -319647215, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 134473150, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1482594875, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1385259025, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1374238543, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1953933460, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1989474312, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1545607270, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1901053602, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -797379043, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1109104904, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 2117350136, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 68847378, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1941733708, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -907972592, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1702606060, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 974448271, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 433283085, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1116716856, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1716744431, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -956231878, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1211114156, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -344971238, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1554674832, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 401539571, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 722582884, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 653374157, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 859912309, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1726058386, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 888808558, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1628080898, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 976737629, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: -1589453211, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  - {fileID: 1017921891, guid: 0f7562be93cc46544806033aa71fd125, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Flagellum-Sheet_9
+  - Flagellum-Sheet_8
+  - Flagellum-Sheet_29
+  - Flagellum-Sheet_28
+  - Flagellum-Sheet_30
+  - Flagellum-Sheet_31
+  - Flagellum-Sheet_49
+  - Flagellum-Sheet_3
+  - Flagellum-Sheet_32
+  - Flagellum-Sheet_48
+  - Flagellum-Sheet_2
+  - Flagellum-Sheet_33
+  - Flagellum-Sheet_23
+  - Flagellum-Sheet_1
+  - Flagellum-Sheet_34
+  - Flagellum-Sheet_22
+  - Flagellum-Sheet_18
+  - Flagellum-Sheet_0
+  - Flagellum-Sheet_35
+  - Flagellum-Sheet_21
+  - Flagellum-Sheet_19
+  - Flagellum-Sheet_45
+  - Flagellum-Sheet_7
+  - Flagellum-Sheet_36
+  - Flagellum-Sheet_20
+  - Flagellum-Sheet_16
+  - Flagellum-Sheet_44
+  - Flagellum-Sheet_6
+  - Flagellum-Sheet_37
+  - Flagellum-Sheet_27
+  - Flagellum-Sheet_17
+  - Flagellum-Sheet_47
+  - Flagellum-Sheet_5
+  - Flagellum-Sheet_26
+  - Flagellum-Sheet_14
+  - Flagellum-Sheet_46
+  - Flagellum-Sheet_4
+  - Flagellum-Sheet_25
+  - Flagellum-Sheet_15
+  - Flagellum-Sheet_41
+  - Flagellum-Sheet_24
+  - Flagellum-Sheet_12
+  - Flagellum-Sheet_40
+  - Flagellum-Sheet_13
+  - Flagellum-Sheet_43
+  - Flagellum-Sheet_10
+  - Flagellum-Sheet_42
+  - Flagellum-Sheet_11
+  - Flagellum-Sheet_64
+  - Flagellum-Sheet_63
+  - Flagellum-Sheet_62
+  - Flagellum-Sheet_58
+  - Flagellum-Sheet_61
+  - Flagellum-Sheet_59
+  - Flagellum-Sheet_60
+  - Flagellum-Sheet_52
+  - Flagellum-Sheet_53
+  - Flagellum-Sheet_50
+  - Flagellum-Sheet_51
+  - Flagellum-Sheet_56
+  - Flagellum-Sheet_57
+  - Flagellum-Sheet_54
+  - Flagellum-Sheet_55
+  - Flagellum-Sheet_38
+  - Flagellum-Sheet_39
+  m_RenderDataMap: {}
+  m_Tag: Flagellum
+  m_IsVariant: 0
