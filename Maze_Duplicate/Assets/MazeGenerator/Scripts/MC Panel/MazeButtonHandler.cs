@@ -12,7 +12,7 @@ public class MazeButtonHandler : MonoBehaviour
     public MazeQuestionLoader _ql;
 
     private Button _button;
-    private RollerBall _player;
+    private Player _player;
     private ScoreIncrement _incrementScore; 
 
     private string _txt;
@@ -21,7 +21,7 @@ public class MazeButtonHandler : MonoBehaviour
 
     void Awake(){
        _button = GetComponent<Button>();
-       _player = FindObjectOfType<RollerBall>();
+       _player = FindObjectOfType<Player>();
        _incrementScore = FindObjectOfType<ScoreIncrement>();
     }
     //deal with keypresses

@@ -4,7 +4,7 @@ using System.Collections;
 //<summary>
 //Ball movement controlls and simple third-person-style camera
 //</summary>
-public class RollerBall : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	public GameObject ViewCamera = null;
 	public AudioClip JumpSound = null;
@@ -21,7 +21,7 @@ public class RollerBall : MonoBehaviour {
 
 	private GameObject theCollectible;
 	private bool mCoinTouched = false;
-	private GameObject currentPanel;
+	public GameObject currentPanel;
 	public GameObject gamePanel;
 
 	private const float DISTANCE_THRESHOLD = 1.0f;

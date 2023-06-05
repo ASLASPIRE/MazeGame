@@ -1,45 +1,38 @@
 ﻿using System.Collections;
-using static System.Array;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 using TMPro;
 using System.Threading.Tasks;
-
-
-/*
- * @TODO: 
- * Display corresponding question text (in white panel on top of scene)
- * Display corresponding image/video for question (only if image or video based), also in white panel on top of scene
- * Randomly shuffle to next question on click of correct answer
- * */
-
 
 public class MazeQuestionLoader : MonoBehaviour
 {
     // UI Components
-    public VideoPlayer VideoPlayer;
-    public Animator anim;
-    public UnityEngine.UI.Button Answer1;
-    public UnityEngine.UI.Button Answer2;
-    public UnityEngine.UI.Button Answer3;
-    public UnityEngine.UI.Button Answer4;
+    [Header("UI components")]
     public TextMeshProUGUI VideoQuestionText;
+    public VideoPlayer VideoPlayer;
+    public Button Button1;
+    public Button Button2;
+    public Button Button3;
+    public Button Button4;
+    //public Animator animator;
+
+    // Datasets
+    [Header("Datasets")]
+    [SerializeField] private TextAsset jsonFile;
+    [SerializeField] private GIFController gifController;
 
     // JSON file reading
-    [SerializeField] private TextAsset jsonFile;
     private List<Question> _questions = new List<Question>();
     private Question _currentQuestion;
     private List<int> _unencounteredQs;
 
-    [SerializeField] private GIFController gifController;
-    private string vocabSet;
-    private List<RuntimeAnimatorController> vocabSetList;
-    private string _currentWord;
-    private RuntimeAnimatorController _currentController;
+    // Private vars
+    private string vocabSet; // name of vocab set we're using
+    private List<RuntimeAnimatorController> vocabSetList; // list of animations for each vocab word
+    private string _currentWord; // the current word that's being asked
+    private RuntimeAnimatorController _currentController; // the current animation for the word being asked
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +45,8 @@ public class MazeQuestionLoader : MonoBehaviour
         {
             vocabSet = Globals.vocabSet;
         }
+
+        // Update the vocab set name and contents depending on value set by player in Globals
         gifController.UpdateVocabSet(vocabSet);
         vocabSetList = gifController.currentVocabList;
         Debug.Log($"vocabSetList Size = {vocabSetList.Count}");
@@ -119,19 +114,19 @@ public class MazeQuestionLoader : MonoBehaviour
         List<Question> answersShuffled = GetRandomAnswers(_questions, _currentQuestion);
         Debug.Log($"toReturn = {answersShuffled.Count}");
         Debug.Log($"first word = {answersShuffled[0].Word}");
-        Answer1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0].Word);
-        Answer2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1].Word);
-        Answer3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2].Word);
-        Answer4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3].Word);
+        Button1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0].Word);
+        Button2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1].Word);
+        Button3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2].Word);
+        Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3].Word);
     }
 
     public void RenderButtonText(RuntimeAnimatorController controller)
     {
         List<string> answersShuffled = GetRandomAnswers(vocabSetList, _currentWord);
-        Answer1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0]);
-        Answer2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1]);
-        Answer3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2]);
-        Answer4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3]);
+        Button1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0]);
+        Button2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1]);
+        Button3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2]);
+        Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3]);
     }
 
     public void RenderVideo(Question question)

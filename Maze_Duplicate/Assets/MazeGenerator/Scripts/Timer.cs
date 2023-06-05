@@ -12,6 +12,9 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timeText;
     public TimerOver timerOver;
 
+
+    [SerializeField] private Player player;
+
     private void Start()
     {
         // Starts the timer automatically
@@ -30,6 +33,7 @@ public class Timer : MonoBehaviour
             else
             {
                 Debug.Log("Time has run out!");
+                Destroy(player.currentPanel);
                 timeRemaining = 0;
                 timerIsRunning = false;
                 //SceneManager.LoadScene("WinScene");
