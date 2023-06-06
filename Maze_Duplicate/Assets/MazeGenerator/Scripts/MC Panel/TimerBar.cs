@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
-[ExecuteInEditMode()]
 public class TimerBar : MonoBehaviour
 {
     [Header("Progress bar parameters")]

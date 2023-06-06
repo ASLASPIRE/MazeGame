@@ -28,6 +28,8 @@ public class Player : MonoBehaviour {
 	private Vector3 _endPoint;
 	private Vector3 direction;
 
+	public Joystick joystick;
+
 	void Start () {
 		mRigidBody = GetComponent<Rigidbody>();
 		mAudioSource = GetComponent<AudioSource>();
@@ -52,17 +54,29 @@ public class Player : MonoBehaviour {
 		// Handle touch input
 		if (Input.touchCount > 0)
 		{
-			Touch touch = Input.GetTouch(0);
-			Vector2 touchPosition = touch.position;
-			Vector3 movementDirection = new Vector3(touchPosition.x - Screen.width / 2f, 0, touchPosition.y - Screen.height / 2f);
-			mRigidBody.velocity = movementDirection.normalized * speed;
+			//Touch touch = Input.GetTouch(0);
+			//Vector2 touchPosition = touch.position;
+			//Vector3 movementDirection = new Vector3(touchPosition.x - Screen.width / 2f, 0, touchPosition.y - Screen.height / 2f);
+			//mRigidBody.velocity = movementDirection.normalized * speed;
 
-			if (movementDirection != Vector3.zero)
-			{
-				Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-				mRigidBody.MoveRotation(toRotation);
-			}
-		}
+			//if (movementDirection != Vector3.zero)
+			//{
+			//	Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+			//	mRigidBody.MoveRotation(toRotation);
+			//}
+
+			horizontalInput = joystick.Horizontal;
+			verticalInput = joystick.Vertical;
+
+            Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput) * speed;
+            mRigidBody.velocity = movementDirection;
+
+            if (movementDirection != Vector3.zero)
+            {
+                Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+                mRigidBody.MoveRotation(toRotation);
+            }
+        }
 		// No touch input detected, use keyboard input instead
 		else
 		{

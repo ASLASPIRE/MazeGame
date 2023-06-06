@@ -700,7 +700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask: {fileID: 130243723359684434}
   timeRemaining: 10
-  timerIsRunning: 0
+  timerIsRunning: 1
 --- !u!1 &5159176754694930927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7686275, g: 0.7686275, b: 0.7686275, a: 0.16470589}
+  m_Color: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 0.44705883}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2394,7 +2394,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
