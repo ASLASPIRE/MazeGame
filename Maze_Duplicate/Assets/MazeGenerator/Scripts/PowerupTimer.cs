@@ -1,0 +1,54 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class PowerupTimer : MonoBehaviour
+{
+    public Camera playerCamera;
+
+    // Timer stuff
+    private float startingTime = 10;
+    private float timeRemaining = 10;
+    private bool timerIsRunning = false;
+
+    // Timer image
+    public Image timerMask;
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        if (timerIsRunning)
+        {
+            if (timeRemaining > 0)
+            {
+                timeRemaining -= Time.deltaTime;
+                timerMask.fillAmount = timeRemaining / startingTime;
+            }
+            else
+            {
+                Debug.Log("Powerup time has run out!");
+                timeRemaining = 0;
+                timerIsRunning = false;
+            }
+        }
+    }
+
+    private void LateUpdate()
+    {
+        transform.LookAt(playerCamera.transform);
+    }
+
+    public void RestartTimer(float durationSeconds)
+    {
+        timerIsRunning = true;
+        startingTime = durationSeconds;
+        timeRemaining = startingTime;
+    }
+}

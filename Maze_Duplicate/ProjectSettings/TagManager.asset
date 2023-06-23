@@ -3,16 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - Coin
+  - Wall
+  - Pillar
+  - Spike
+  - PatrolEnemy
+  - Powerup_Shield
+  - Powerup_Clock
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ShieldPowerup
   - Water
   - UI
-  - 
-  - 
+  - whatIsPlayer
+  - whatIsGround
   - 
   - 
   - 
