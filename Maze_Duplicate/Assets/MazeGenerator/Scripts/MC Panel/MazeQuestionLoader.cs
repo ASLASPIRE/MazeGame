@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ public class MazeQuestionLoader : MonoBehaviour
     // UI Components
     [Header("UI components")]
     public TextMeshProUGUI VideoQuestionText;
-    public VideoPlayer VideoPlayer;
+    public VideoPlayerController VideoPlayerController;
     public Button Button1;
     public Button Button2;
     public Button Button3;
@@ -33,6 +34,7 @@ public class MazeQuestionLoader : MonoBehaviour
     private List<RuntimeAnimatorController> vocabSetList; // list of animations for each vocab word
     private string _currentWord; // the current word that's being asked
     private RuntimeAnimatorController _currentController; // the current animation for the word being asked
+    private List<string> vidVocabList;
 
     // Start is called before the first frame update
     void Start()
@@ -47,15 +49,21 @@ public class MazeQuestionLoader : MonoBehaviour
         }
 
         // Update the vocab set name and contents depending on value set by player in Globals
-        gifController.UpdateVocabSet(vocabSet);
-        vocabSetList = gifController.currentVocabList;
-        Debug.Log($"vocabSetList Size = {vocabSetList.Count}");
-        _questions = ReadFromFileJSON(jsonFile);
-        _unencounteredQs = new List<int>();
-        for (int i = 0; i < vocabSetList.Count; i++)
-        {
-            _unencounteredQs.Add(i);
-        }
+        // gifController.UpdateVocabSet(vocabSet);
+        // vocabSetList = gifController.currentVocabList;
+        // Debug.Log($"vocabSetList Size = {vocabSetList.Count}");
+        // _questions = ReadFromFileJSON(jsonFile);
+        // _unencounteredQs = new List<int>();
+        // for (int i = 0; i < vocabSetList.Count; i++)
+        // {
+        //     _unencounteredQs.Add(i);
+        // }
+        // LoadRandomQuestion();
+
+
+
+        vidVocabList = VideoPlayerController.VocabWordToPathDict.Keys.ToList();
+        Debug.Log($"vidVocabList Size = {vidVocabList.Count}");
         LoadRandomQuestion();
     }
 
@@ -63,22 +71,25 @@ public class MazeQuestionLoader : MonoBehaviour
     {
         int randomIndex = GetRandomQuestionIndex();
         //LoadQuestion(_questions[randomIndex]);
-        LoadWord(vocabSetList[randomIndex]);
+        //LoadWord(vocabSetList[randomIndex]);
+        LoadWord(vidVocabList[randomIndex]);
     }
 
     public int GetRandomQuestionIndex()
     {
-        var questionListIndex = _unencounteredQs[Random.Range(0, _unencounteredQs.Count)];
-        _unencounteredQs.Remove(questionListIndex);
+        // var questionListIndex = _unencounteredQs[Random.Range(0, _unencounteredQs.Count)];
+        // _unencounteredQs.Remove(questionListIndex);
 
-        if (_unencounteredQs.Count == 0)
-        {
-            for (int i = 0; i < vocabSetList.Count; i++)
-            {
-                _unencounteredQs.Add(i);
-            }
-        }
-        return questionListIndex;
+        // if (_unencounteredQs.Count == 0)
+        // {
+        //     for (int i = 0; i < vocabSetList.Count; i++)
+        //     {
+        //         _unencounteredQs.Add(i);
+        //     }
+        // }
+        // return questionListIndex;
+
+        return Random.Range(0, vidVocabList.Count);
     }
 
     public void LoadQuestion(Question question)
@@ -96,10 +107,22 @@ public class MazeQuestionLoader : MonoBehaviour
         RenderButtonText(word);
         RenderQuestionText(word);
         RenderGIF(word);
+    }
 
+    public void LoadWord(string word)
+    {
+        _currentWord = word;
+        RenderButtonText(word);
+        RenderQuestionText(word);
+        RenderVideo(word);
     }
 
     public void RenderQuestionText(Question question)
+    {
+        VideoQuestionText.text = "What sign does the video show?";
+    }
+
+    public void RenderQuestionText(string question)
     {
         VideoQuestionText.text = "What sign does the video show?";
     }
@@ -120,6 +143,17 @@ public class MazeQuestionLoader : MonoBehaviour
         Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3].Word);
     }
 
+    public void RenderButtonText(string question)
+    {
+        List<string> answersShuffled = GetRandomAnswers(vidVocabList, _currentWord);
+        Debug.Log($"toReturn = {answersShuffled.Count}");
+        Debug.Log($"first word = {answersShuffled[0]}");
+        Button1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0]);
+        Button2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1]);
+        Button3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2]);
+        Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3]);
+    }
+
     public void RenderButtonText(RuntimeAnimatorController controller)
     {
         List<string> answersShuffled = GetRandomAnswers(vocabSetList, _currentWord);
@@ -131,8 +165,15 @@ public class MazeQuestionLoader : MonoBehaviour
 
     public void RenderVideo(Question question)
     {
-        VideoPlayer.url = question.Link;
-        VideoPlayer.Play();
+        //VideoPlayer.url = question.Link;
+        //VideoPlayer.Play();
+    }
+
+    public void RenderVideo(string word)
+    {
+        //VideoPlayer.url = question.Link;
+        //VideoPlayer.Play();
+        VideoPlayerController.PlayVideo(word);
     }
 
     public void RenderGIF(RuntimeAnimatorController controller)
@@ -210,6 +251,41 @@ public class MazeQuestionLoader : MonoBehaviour
         for (int i = 0; i < controllerList.Count; i++)
         {
             inputList.Add(controllerList[i].name);
+        }
+        toReturn.Add(correctAns);
+        inputList.Remove(correctAns);
+
+        for (int i = 0; i < 3; i++)
+        {
+            int rndNum = Random.Range(0, inputList.Count);
+            toReturn.Add(inputList[rndNum]);
+            inputList.Remove(inputList[rndNum]);
+        }
+
+        Debug.Log($"toReturn = {toReturn.Count}");
+        // Randomize list
+        for (int i = 0; i < toReturn.Count; i++)
+        {
+            string temp = toReturn[i];
+            int randomIndex = Random.Range(i, toReturn.Count);
+            toReturn[i] = toReturn[randomIndex];
+            toReturn[randomIndex] = temp;
+        }
+
+        Debug.Log($"toReturn2 = {toReturn.Count}");
+        return toReturn;
+    }
+
+    public List<string> GetRandomAnswers(List<string> vocabList, string correctAns)
+    {
+        List<string> toReturn = new List<string>();
+
+        // Make list of 4 random words, including current one
+        List<string> inputList = new List<string>();
+        Debug.Log($"controllerList size = {vocabList.Count}");
+        for (int i = 0; i < vocabList.Count; i++)
+        {
+            inputList.Add(vocabList[i]);
         }
         toReturn.Add(correctAns);
         inputList.Remove(correctAns);
