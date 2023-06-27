@@ -743,6 +743,107 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332215566}
   m_CullTransparentMesh: 1
+--- !u!1 &355020527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 355020529}
+  - component: {fileID: 355020528}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355020528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355020527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52162b743b512744ba683488a358bb33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 585683371}
+  timerText: {fileID: 1730909301}
+  gameOverPanel: {fileID: 35329873}
+  gameOverText: {fileID: 117423253}
+  restartGameText: {fileID: 1434727445}
+  aslMCGamePanel: {fileID: 3982282959967779575, guid: 4b2ffa3299af99446aba33c9a9626581, type: 3}
+  gameMechanics: {fileID: 403848827}
+  player: {fileID: 790883869}
+--- !u!4 &355020529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355020527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1016.26764, y: 746.17163, z: -53.383713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &403848826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 403848828}
+  - component: {fileID: 403848827}
+  m_Layer: 0
+  m_Name: GameMechanicsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &403848827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403848826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f8de0c12d59cf46b91a7d55d18dd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TimeRemaining: 180
+  IsTimerRunning: 0
+  IsGameOver: 0
+  IsGameplayActive: 0
+  uiManager: {fileID: 355020528}
+--- !u!4 &403848828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403848826}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1016.26764, y: 746.17163, z: -53.383713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &424472662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1470,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1730909301}
     - target: {fileID: 7557329870021945284, guid: 741982b8b4fae95489930d3d3cfdb19e, type: 3}
+      propertyPath: uiManager
+      value: 
+      objectReference: {fileID: 355020528}
+    - target: {fileID: 7557329870021945284, guid: 741982b8b4fae95489930d3d3cfdb19e, type: 3}
       propertyPath: ViewCamera
       value: 
       objectReference: {fileID: 1130905223}
@@ -1376,6 +1481,10 @@ PrefabInstance:
       propertyPath: MazeSpawner
       value: 
       objectReference: {fileID: 949568340}
+    - target: {fileID: 7557329870021945284, guid: 741982b8b4fae95489930d3d3cfdb19e, type: 3}
+      propertyPath: gameMechanics
+      value: 
+      objectReference: {fileID: 403848827}
     - target: {fileID: 7557329870021945284, guid: 741982b8b4fae95489930d3d3cfdb19e, type: 3}
       propertyPath: EnergyExplosion
       value: 
@@ -1390,7 +1499,7 @@ PrefabInstance:
       objectReference: {fileID: 157252387}
     - target: {fileID: 8028719688665868464, guid: 741982b8b4fae95489930d3d3cfdb19e, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8028719688665868464, guid: 741982b8b4fae95489930d3d3cfdb19e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1489,7 +1598,7 @@ Transform:
   m_Children:
   - {fileID: 542710908}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949568338
 GameObject:
@@ -2701,7 +2810,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895491377
 GameObject:

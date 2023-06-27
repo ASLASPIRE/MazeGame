@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1.0f;
 
         gameOverPanel.SetActive(false);
-        gameOverText.gameObject.SetActive(false);
+        //gameOverText.gameObject.SetActive(false);
         restartGameText.gameObject.SetActive(false);
     }
 
@@ -61,6 +61,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator StartGameOverSequence()
     {
+        Debug.Log("Showing game over screen");
         gameOverPanel.SetActive(true);
         Time.timeScale = 0.0f;
         int score = GameMechanics.Score;
@@ -124,5 +125,16 @@ public class UIManager : MonoBehaviour
     public void UpdateScoreToText()
     {
         scoreText.text = GameMechanics.Score.ToString();
+    }
+
+    public void UpdateTimerToText(float timeToDisplaySeconds)
+    {
+        timeToDisplaySeconds += 1;
+
+        float minutes = Mathf.FloorToInt(timeToDisplaySeconds / 60);
+        float seconds = Mathf.FloorToInt(timeToDisplaySeconds % 60);
+
+        // Update UI text
+        timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }

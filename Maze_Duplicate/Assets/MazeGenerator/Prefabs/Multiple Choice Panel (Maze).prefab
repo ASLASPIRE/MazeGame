@@ -591,7 +591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &967253459274471469
 Transform:
   m_ObjectHideFlags: 0
@@ -702,6 +702,7 @@ MonoBehaviour:
   mask: {fileID: 130243723359684434}
   timeRemaining: 10
   timerIsRunning: 1
+  mazeButtonHandler: {fileID: 0}
 --- !u!1 &5159176754694930927
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +854,8 @@ MonoBehaviour:
   confetti_: {fileID: 2408297439185355243, guid: 9a87e82d5753bd94ea0e7e9c81b0a23c, type: 3}
   _ql: {fileID: 3710337810504823415}
   _animationTime: 0.1
+  uiManager: {fileID: 0}
+  gameMechanics: {fileID: 0}
 --- !u!1 &5159176754878417948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,6 +1713,8 @@ MonoBehaviour:
   confetti_: {fileID: 2408297439185355243, guid: 9a87e82d5753bd94ea0e7e9c81b0a23c, type: 3}
   _ql: {fileID: 3710337810504823415}
   _animationTime: 0.1
+  uiManager: {fileID: 0}
+  gameMechanics: {fileID: 0}
 --- !u!1 &5159176756468792560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +1945,8 @@ MonoBehaviour:
   confetti_: {fileID: 2408297439185355243, guid: 9a87e82d5753bd94ea0e7e9c81b0a23c, type: 3}
   _ql: {fileID: 3710337810504823415}
   _animationTime: 0.1
+  uiManager: {fileID: 0}
+  gameMechanics: {fileID: 0}
 --- !u!1 &5159176756725627790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,6 +2098,8 @@ MonoBehaviour:
   confetti_: {fileID: 2408297439185355243, guid: 9a87e82d5753bd94ea0e7e9c81b0a23c, type: 3}
   _ql: {fileID: 3710337810504823415}
   _animationTime: 0.1
+  uiManager: {fileID: 0}
+  gameMechanics: {fileID: 0}
 --- !u!1 &5269535174615593546
 GameObject:
   m_ObjectHideFlags: 0

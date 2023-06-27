@@ -35,7 +35,7 @@ public class GameMechanics : MonoBehaviour
             if (TimeRemaining > 0)
             {
                 TimeRemaining -= Time.deltaTime;
-                DisplayTime(TimeRemaining);
+                uiManager.UpdateTimerToText(TimeRemaining);
             }
             else
             {
@@ -44,7 +44,7 @@ public class GameMechanics : MonoBehaviour
                 //Destroy(player.currentPanel);
                 TimeRemaining = 0;
                 IsTimerRunning = false;
-                // TODO: Show time over screen: game over
+                SetGameOver(true);
             }
         }
     }
@@ -53,7 +53,6 @@ public class GameMechanics : MonoBehaviour
     {
         Score += toAdd;
         uiManager.UpdateScoreToText();
-        // TODO: update UI text
         return Score;
     }
 
