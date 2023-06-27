@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using Unity.AI.Navigation;
 using System.Collections;
+using static Globals;
 
 //<summary>
 //Game object, that creates maze and instantiates it in scene
@@ -36,8 +37,41 @@ public class MazeSpawner : MonoBehaviour {
 
 	private int goalNum;
 	public int MinNumGoals = 40;
+	public int TotalNumSpikes = 20;
+	public int TotalNumPatrols = 20;
+	public int TotalNumPowerups = 20;
 
 	void Start () {
+		// Manage settings depending on difficulty selected
+		switch (difficulty)
+		{
+			case Difficulty.Easy:
+				Rows = 20;
+				Columns = 20;
+				MinNumGoals = 20;
+				TotalNumSpikes = 20;
+				TotalNumPatrols = 10;
+				TotalNumPowerups = 15;
+				break;
+			case Difficulty.Medium:
+				Rows = 25;
+				Columns = 25;
+				MinNumGoals = 30;
+				TotalNumSpikes = 50;
+				TotalNumPatrols = 20;
+				TotalNumPowerups = 15;
+				break;
+			case Difficulty.Hard:
+				Rows = 25;
+				Columns = 25;
+				MinNumGoals = 40;
+				TotalNumSpikes = 80;
+				TotalNumPatrols = 30;
+				TotalNumPowerups = 15;
+				break;
+		}
+
+
 		if (!FullRandom) {
 			Random.seed = RandomSeed;
 		}
@@ -131,7 +165,7 @@ public class MazeSpawner : MonoBehaviour {
 		NavMeshSurface.BuildNavMesh();
 
 		// Add spikes randomly
-		for (int i = 0; i < Rows + Columns; i++)
+		for (int i = 0; i < TotalNumSpikes; i++)
 		{
 			int randomRow = Random.Range(0, Rows);
 			int randomColumn = Random.Range(0, Columns);
@@ -156,7 +190,7 @@ public class MazeSpawner : MonoBehaviour {
 		}
 
 		// Spawn enemies random
-		for (int i = 0; i < Rows; i++)
+		for (int i = 0; i < TotalNumPatrols; i++)
 		{
 			int randomRow = Random.Range(0, Rows);
 			int randomColumn = Random.Range(0, Columns);
@@ -173,7 +207,7 @@ public class MazeSpawner : MonoBehaviour {
 		}
 
 		// Spawn random powerups
-		for (int i = 0; i < Rows; i++)
+		for (int i = 0; i < TotalNumPowerups; i++)
 		{
 			int randomRow = Random.Range(0, Rows);
 			int randomColumn = Random.Range(0, Columns);

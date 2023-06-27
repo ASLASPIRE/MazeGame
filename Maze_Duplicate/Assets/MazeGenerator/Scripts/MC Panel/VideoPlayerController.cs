@@ -4,6 +4,7 @@ using System.Globalization;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Video;
+using static Globals;
 
 public class VideoPlayerController : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class VideoPlayerController : MonoBehaviour
 
     private void Awake()
     {
-        string path = Application.streamingAssetsPath + "/Chemistry";
+        //Debug.Log($"Thing to print: {vocabList.ToString()}");
+        string path = Application.streamingAssetsPath + "/" + vocabList.ToString();
         GenerateVocabListFromVideos(path);
         videoPlayer.url = Application.streamingAssetsPath + "/Chemistry/Beaker.mp4";
     }

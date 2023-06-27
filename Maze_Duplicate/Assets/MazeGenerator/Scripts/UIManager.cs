@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class UIManager : MonoBehaviour
     [Header("Various Panels or UI Elements")]
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI gameOverText;
-    [SerializeField] private TextMeshProUGUI restartGameText;
+
+    [Header("Game over Panels")]
+    [SerializeField] private GameObject loadingBarPanel;
+    [SerializeField] private Image loadingBarPanelMask;
 
     [Header("Prefabs")]
     [SerializeField] private GameObject aslMCGamePanel;
@@ -29,8 +33,7 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 1.0f;
 
         gameOverPanel.SetActive(false);
-        //gameOverText.gameObject.SetActive(false);
-        restartGameText.gameObject.SetActive(false);
+        loadingBarPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,14 +45,13 @@ public class UIManager : MonoBehaviour
             //If R is hit, restart the current scene
             if (Input.GetKeyDown(KeyCode.R))
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                OnRestartButtonPress();
             }
 
             //If Q is hit, quit the game
             if (Input.GetKeyDown(KeyCode.Q))
             {
-                print("Application Quit");
-                Application.Quit();
+                OnQuitButtonPress();
             }
         }
     }
@@ -74,7 +76,7 @@ public class UIManager : MonoBehaviour
             gameOverText.text = $"Great Job!\nYou collected {score} coins";
         }
         yield return new WaitForSecondsRealtime(4.0f);
-        restartGameText.gameObject.SetActive(true);
+        // Display something else if needed here
     }
 
     public void PlayRemoveTimeAnimation(float timeToRemove)
@@ -136,5 +138,34 @@ public class UIManager : MonoBehaviour
 
         // Update UI text
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    public void OnRestartButtonPress()
+    {
+        StartCoroutine(LoadSceneAsync(1));
+    }
+
+    public void OnMainMenuButtonPress()
+    {
+        StartCoroutine(LoadSceneAsync(0));
+    }
+
+    public void OnQuitButtonPress()
+    {
+        print("Application Quit");
+        Application.Quit();
+    }
+
+    private IEnumerator LoadSceneAsync(int sceneId)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
+        loadingBarPanel.SetActive(true);
+
+        while (!operation.isDone)
+        {
+            float progressValue = Mathf.Clamp01(operation.progress / 0.95f);
+            loadingBarPanelMask.fillAmount = progressValue;
+            yield return null;
+        }
     }
 }
