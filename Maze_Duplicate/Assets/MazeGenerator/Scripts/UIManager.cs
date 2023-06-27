@@ -56,6 +56,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Shows the Game Over panel, along with text, score, and buttons associated with it
+    /// </summary>
     public void ShowGameOverScreen()
     {
         StartCoroutine(StartGameOverSequence());
@@ -79,11 +82,19 @@ public class UIManager : MonoBehaviour
         // Display something else if needed here
     }
 
+    /// <summary>
+    /// Decreases the time and plays the UI animation associated with losing time
+    /// </summary>
+    /// <param name="timeToRemove">The time removed from the timer</param>
     public void PlayRemoveTimeAnimation(float timeToRemove)
     {
         StartCoroutine(RemoveTime(timeToRemove));
     }
 
+    /// <summary>
+    /// Increases the timer and plays the UI animation associated with adding time
+    /// </summary>
+    /// <param name="timeToAdd">The time added to the timer</param>
     public void PlayAddTimeAnimation(float timeToAdd)
     {
         StartCoroutine(AddTime(timeToAdd));
@@ -113,22 +124,35 @@ public class UIManager : MonoBehaviour
 		timerText.fontSize = origSize;
 	}
 
+    /// <summary>
+    /// Creates the ASL MC game panel
+    /// </summary>
     public void InstantiateGamePanel()
     {
         spawnedGamePanel = Instantiate(aslMCGamePanel);
         spawnedGamePanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Destroys the ASL MC game panel
+    /// </summary>
     public void DestroyGamePanel()
     {
         Destroy(spawnedGamePanel);
     }
 
+    /// <summary>
+    /// Checks the current score and updates the UI text accordingly
+    /// </summary>
     public void UpdateScoreToText()
     {
         scoreText.text = GameMechanics.Score.ToString();
     }
 
+    /// <summary>
+    /// Converts seconds into a clock format while updating the UI text
+    /// </summary>
+    /// <param name="timeToDisplaySeconds">Time in seconds</param>
     public void UpdateTimerToText(float timeToDisplaySeconds)
     {
         timeToDisplaySeconds += 1;
@@ -140,16 +164,25 @@ public class UIManager : MonoBehaviour
         timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
+    /// <summary>
+    /// Restarts the game through reloading the scene
+    /// </summary>
     public void OnRestartButtonPress()
     {
         StartCoroutine(LoadSceneAsync(1));
     }
 
+    /// <summary>
+    /// Exits to main menu through loading that scene
+    /// </summary>
     public void OnMainMenuButtonPress()
     {
         StartCoroutine(LoadSceneAsync(0));
     }
 
+    /// <summary>
+    /// Quits the game
+    /// </summary>
     public void OnQuitButtonPress()
     {
         print("Application Quit");

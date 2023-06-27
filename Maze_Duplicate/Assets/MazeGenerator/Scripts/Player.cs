@@ -164,30 +164,26 @@ public class Player : MonoBehaviour {
 	{
 		if (coll.gameObject.tag.Equals ("Floor")) {
 			numFloorsTouched++;
-			if (audioSource != null && HitSound != null && coll.relativeVelocity.y > .5f) {
-				audioSource.PlayOneShot (HitSound, coll.relativeVelocity.magnitude);
-			}
+			// if (audioSource != null && HitSound != null && coll.relativeVelocity.y > .5f) {
+			// 	audioSource.PlayOneShot (HitSound, coll.relativeVelocity.magnitude);
+			// }
 		} else {
-			if (audioSource != null && HitSound != null && coll.relativeVelocity.magnitude > 2f) {
-				audioSource.PlayOneShot (HitSound, coll.relativeVelocity.magnitude);
-			}
+			// if (audioSource != null && HitSound != null && coll.relativeVelocity.magnitude > 2f) {
+			// 	audioSource.PlayOneShot (HitSound, coll.relativeVelocity.magnitude);
+			// }
 		}
 
 		if (coll.gameObject.tag.Equals("Spike")) {
 			if (shield.activeInHierarchy) return;
 			Debug.Log("touched spike");
 			Instantiate(EnergyExplosion, transform.position, Quaternion.Euler(0, 0, 0));
-			//StartCoroutine(RemoveTime(10.0f));
 			uiManager.PlayRemoveTimeAnimation(10.0f);
-			//Timer.timeRemaining -= 10.0f;
-			//TimerDecreaseAnimator.SetTrigger("PlayAnimation");
 		}
 
 		if (coll.gameObject.tag.Equals("PatrolEnemy")) {
 			if (shield.activeInHierarchy) return;
 			Debug.Log("touched enemy");
 			RandomTeleportPlayer();
-			//StartCoroutine(RemoveTime(10.0f));
 			uiManager.PlayRemoveTimeAnimation(10.0f);
 		}
 	}
@@ -201,9 +197,6 @@ public class Player : MonoBehaviour {
 		Vector3 teleportPos = new Vector3(x, 4, z);
 		transform.position = teleportPos;
 		Physics.SyncTransforms();
-
-		//Timer.timeRemaining -= 10.0f;
-		//TimerDecreaseAnimator.SetTrigger("PlayAnimation");
 	}
 
 	private void OnCollisionExit(Collision coll)
@@ -221,40 +214,30 @@ public class Player : MonoBehaviour {
 				IsCoinTouched = true;
 				CurrentCoinCollectible = other.gameObject;
 				rigidBody.velocity = Vector3.zero;
-				//Destroy(theCollectible);
-				if (audioSource != null && CoinSound != null)
-				{
-					audioSource.PlayOneShot(CoinSound);
-				}
+				// if (audioSource != null && CoinSound != null)
+				// {
+				// 	audioSource.PlayOneShot(CoinSound);
+				// }
 				// Instantiate game panel
 				gameMechanics.IsGameplayActive = false;
 				Debug.Log("touched coin");
-				//isGameplayActive = false;
-				//currentPanel = Instantiate(MCGamePanel);
 				uiManager.InstantiateGamePanel();
 			}
 		}
 		if (other.gameObject.tag.Equals("Powerup_Shield")) {
 			Destroy(other.gameObject);
 			ActivateShieldPowerup(10.0f);
-			//StartCoroutine(StartShieldPowerup(10.0f));
 		}
 		if (other.gameObject.tag.Equals("Powerup_Clock")) {
 			Destroy(other.gameObject);
 			uiManager.PlayAddTimeAnimation(10.0f);
-			//StartCoroutine(AddTime(10.0f));
 		}
 	}
 
-	private IEnumerator StartShieldPowerup(float durationSeconds)
-	{
-		shield.SetActive(true);
-		PowerupTimer powerupTimer = shield.GetComponentInChildren<PowerupTimer>();
-		powerupTimer.RestartTimer(durationSeconds);
-		yield return new WaitForSeconds(durationSeconds);
-		shield.SetActive(false);
-	}
-
+	/// <summary>
+	/// Upon collection of a shield powerup, creates a shield around the player and its associated timer
+	/// </summary>
+	/// <param name="durationSeconds">Duration of the powerup in seconds</param>
 	public void ActivateShieldPowerup(float durationSeconds)
 	{
 		shield.SetActive(true);
@@ -262,52 +245,17 @@ public class Player : MonoBehaviour {
 		powerupTimer.RestartTimer(durationSeconds);
 	}
 
+	/// <summary>
+	/// Upon expiration of a shield powerup, destroys the shield around the player
+	/// </summary>
 	public void DisableShieldPowerup()
 	{
 		shield.SetActive(false);
 	}
 
-	private IEnumerator AddTime(float durationSeconds)
-	{
-		Timer.timeRemaining += durationSeconds;
-		Color origColor = TimerText.color;
-		float origSize = TimerText.fontSize;
-		TimerText.color = new Color32(45, 220, 45, 255);
-		TimerText.fontSize += 10.0f;
-		yield return new WaitForSecondsRealtime(0.5f);
-		TimerText.color = origColor;
-		TimerText.fontSize = origSize;
-	}
-
-	private IEnumerator RemoveTime(float durationSeconds)
-	{
-		Timer.timeRemaining -= durationSeconds;
-		Color origColor = TimerText.color;
-		float origSize = TimerText.fontSize;
-		TimerText.color = new Color32(245, 25, 25, 255);
-		TimerText.fontSize += 10.0f;
-		yield return new WaitForSecondsRealtime(0.5f);
-		TimerText.color = origColor;
-		TimerText.fontSize = origSize;
-	}
-
-	public void EndPanel(bool correct)
-    {
-		if (correct)
-		{
-			Destroy(currentPanel);
-			Destroy(CurrentCoinCollectible);
-			IsCoinTouched = false;
-			isGameplayActive = true;
-		}
-		if (!correct)
-		{
-			Destroy(currentPanel);
-			IsCoinTouched = false;
-			isGameplayActive = true;
-		}
-	}
-
+	/// <summary>
+	/// Handles logic for making player jump, including adding force and detecting ground
+	/// </summary>
 	public void onJumpButtonPress()
 	{
 		if (!isFloorTouched)

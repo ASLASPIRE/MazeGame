@@ -25,8 +25,8 @@ public class MazeQuestionLoader : MonoBehaviour
     [SerializeField] private GIFController gifController;
 
     // JSON file reading
-    private List<Question> _questions = new List<Question>();
-    private Question _currentQuestion;
+    //private List<Question> _questions = new List<Question>();
+    //private Question _currentQuestion;
     private List<int> _unencounteredQs;
 
     // Private vars
@@ -67,6 +67,9 @@ public class MazeQuestionLoader : MonoBehaviour
         LoadRandomQuestion();
     }
 
+    /// <summary>
+    /// Loads a question and 4 answers into the panel's contents
+    /// </summary>
     public void LoadRandomQuestion()
     {
         int randomIndex = GetRandomQuestionIndex();
@@ -75,6 +78,10 @@ public class MazeQuestionLoader : MonoBehaviour
         LoadWord(vidVocabList[randomIndex]);
     }
 
+    /// <summary>
+    /// Get a random question index
+    /// </summary>
+    /// <returns>Returns an int corresponding to an array index</returns>
     public int GetRandomQuestionIndex()
     {
         // var questionListIndex = _unencounteredQs[Random.Range(0, _unencounteredQs.Count)];
@@ -92,13 +99,13 @@ public class MazeQuestionLoader : MonoBehaviour
         return Random.Range(0, vidVocabList.Count);
     }
 
-    public void LoadQuestion(Question question)
-    {
-        _currentQuestion = question;
-        RenderButtonText(question);
-        RenderQuestionText(question);
-        RenderVideo(question);
-    }
+    // public void LoadQuestion(Question question)
+    // {
+    //     _currentQuestion = question;
+    //     RenderButtonText(question);
+    //     RenderQuestionText(question);
+    //     RenderVideo(question);
+    // }
 
     public void LoadWord(RuntimeAnimatorController word)
     {
@@ -109,6 +116,10 @@ public class MazeQuestionLoader : MonoBehaviour
         RenderGIF(word);
     }
 
+    /// <summary>
+    /// Loads the question/word into the videoplayer and buttons
+    /// </summary>
+    /// <param name="word">Word the panel is asking about</param>
     public void LoadWord(string word)
     {
         _currentWord = word;
@@ -117,11 +128,15 @@ public class MazeQuestionLoader : MonoBehaviour
         RenderVideo(word);
     }
 
-    public void RenderQuestionText(Question question)
-    {
-        VideoQuestionText.text = "What sign does the video show?";
-    }
+    // public void RenderQuestionText(Question question)
+    // {
+    //     VideoQuestionText.text = "What sign does the video show?";
+    // }
 
+    /// <summary>
+    /// Renders question text
+    /// </summary>
+    /// <param name="question">Question we're asking</param>
     public void RenderQuestionText(string question)
     {
         VideoQuestionText.text = "What sign does the video show?";
@@ -132,17 +147,21 @@ public class MazeQuestionLoader : MonoBehaviour
         VideoQuestionText.text = "What sign does the video show?";
     }
 
-    public void RenderButtonText(Question question)
-    {
-        List<Question> answersShuffled = GetRandomAnswers(_questions, _currentQuestion);
-        Debug.Log($"toReturn = {answersShuffled.Count}");
-        Debug.Log($"first word = {answersShuffled[0].Word}");
-        Button1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0].Word);
-        Button2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1].Word);
-        Button3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2].Word);
-        Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3].Word);
-    }
+    // public void RenderButtonText(Question question)
+    // {
+    //     List<Question> answersShuffled = GetRandomAnswers(_questions, _currentQuestion);
+    //     Debug.Log($"toReturn = {answersShuffled.Count}");
+    //     Debug.Log($"first word = {answersShuffled[0].Word}");
+    //     Button1.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[0].Word);
+    //     Button2.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[1].Word);
+    //     Button3.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[2].Word);
+    //     Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3].Word);
+    // }
 
+    /// <summary>
+    /// Creates 4 random answers, one of them being correct, and assigns them to random buttons
+    /// </summary>
+    /// <param name="question">Word we're asking about</param>
     public void RenderButtonText(string question)
     {
         List<string> answersShuffled = GetRandomAnswers(vidVocabList, _currentWord);
@@ -163,12 +182,16 @@ public class MazeQuestionLoader : MonoBehaviour
         Button4.gameObject.GetComponent<MazeButtonHandler>().SetText(answersShuffled[3]);
     }
 
-    public void RenderVideo(Question question)
-    {
-        //VideoPlayer.url = question.Link;
-        //VideoPlayer.Play();
-    }
+    // public void RenderVideo(Question question)
+    // {
+    //     //VideoPlayer.url = question.Link;
+    //     //VideoPlayer.Play();
+    // }
 
+    /// <summary>
+    /// Render the video associated with the question we're asking
+    /// </summary>
+    /// <param name="word">Word corresponding to title/sign of video</param>
     public void RenderVideo(string word)
     {
         //VideoPlayer.url = question.Link;
@@ -191,6 +214,11 @@ public class MazeQuestionLoader : MonoBehaviour
         // whatever you need to do after delay.
     }
 
+    /// <summary>
+    /// Checks if the button selection matches the correct answer shown in the video
+    /// </summary>
+    /// <param name="answerText">The text of the button selected</param>
+    /// <returns>Returns a bool corresponding to whether that selection was correct</returns>
     public bool AnswerIsCorrect(string answerText)
     {
         //return _currentQuestion.Word.Equals(answerText);
@@ -212,34 +240,34 @@ public class MazeQuestionLoader : MonoBehaviour
     //    return ret;
     //}
 
-    public List<Question> GetRandomAnswers(List<Question> inputList, Question correctAns)
-    {
-        List<Question> toReturn = new List<Question>();
+    // public List<Question> GetRandomAnswers(List<Question> inputList, Question correctAns)
+    // {
+    //     List<Question> toReturn = new List<Question>();
 
-        // Make list of 4 random Questions, including current one
-        toReturn.Add(correctAns);
-        inputList.Remove(correctAns);
+    //     // Make list of 4 random Questions, including current one
+    //     toReturn.Add(correctAns);
+    //     inputList.Remove(correctAns);
 
-        for (int i = 0; i < 3; i++)
-        {
-            int rndNum = Random.Range(0, inputList.Count);
-            toReturn.Add(inputList[rndNum]);
-            inputList.Remove(inputList[rndNum]);
-        }
+    //     for (int i = 0; i < 3; i++)
+    //     {
+    //         int rndNum = Random.Range(0, inputList.Count);
+    //         toReturn.Add(inputList[rndNum]);
+    //         inputList.Remove(inputList[rndNum]);
+    //     }
 
-        Debug.Log($"toReturn = {toReturn.Count}");
-        // Randomize list
-        for (int i = 0; i < toReturn.Count; i++)
-        {
-            Question temp = toReturn[i];
-            int randomIndex = Random.Range(i, toReturn.Count);
-            toReturn[i] = toReturn[randomIndex];
-            toReturn[randomIndex] = temp;
-        }
+    //     Debug.Log($"toReturn = {toReturn.Count}");
+    //     // Randomize list
+    //     for (int i = 0; i < toReturn.Count; i++)
+    //     {
+    //         Question temp = toReturn[i];
+    //         int randomIndex = Random.Range(i, toReturn.Count);
+    //         toReturn[i] = toReturn[randomIndex];
+    //         toReturn[randomIndex] = temp;
+    //     }
 
-        Debug.Log($"toReturn2 = {toReturn.Count}");
-        return toReturn;
-    }
+    //     Debug.Log($"toReturn2 = {toReturn.Count}");
+    //     return toReturn;
+    // }
 
     public List<string> GetRandomAnswers(List<RuntimeAnimatorController> controllerList, string correctAns)
     {
@@ -276,6 +304,12 @@ public class MazeQuestionLoader : MonoBehaviour
         return toReturn;
     }
 
+    /// <summary>
+    /// Takes a list of vocab words and randomly selects 4 words, one of them being the correct answer
+    /// </summary>
+    /// <param name="vocabList">List of vocab words</param>
+    /// <param name="correctAns">The correct vocab word</param>
+    /// <returns>Returns a size 4 array of vocab words, one of them being correct</returns>
     public List<string> GetRandomAnswers(List<string> vocabList, string correctAns)
     {
         List<string> toReturn = new List<string>();
@@ -311,17 +345,17 @@ public class MazeQuestionLoader : MonoBehaviour
         return toReturn;
     }
 
-    public List<Question> ReadFromFileJSON(TextAsset jsonFile)
-    {
-        // Each JSON file has a list of Questions -> read that list and place into a List<>
-        //Debug.Log(jsonFile);
-        Questions questionsjson = JsonUtility.FromJson<Questions>(jsonFile.text);
-        //Debug.Log($"thing = {questionsjson.questions.Length}");
-        List<Question> toReturn = new List<Question>();
-        foreach (Question q in questionsjson.questions)
-        {
-            toReturn.Add(q);
-        }
-        return toReturn;
-    }
+    // public List<Question> ReadFromFileJSON(TextAsset jsonFile)
+    // {
+    //     // Each JSON file has a list of Questions -> read that list and place into a List<>
+    //     //Debug.Log(jsonFile);
+    //     Questions questionsjson = JsonUtility.FromJson<Questions>(jsonFile.text);
+    //     //Debug.Log($"thing = {questionsjson.questions.Length}");
+    //     List<Question> toReturn = new List<Question>();
+    //     foreach (Question q in questionsjson.questions)
+    //     {
+    //         toReturn.Add(q);
+    //     }
+    //     return toReturn;
+    // }
 }

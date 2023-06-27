@@ -75,7 +75,7 @@ public class PatrolEnemy : MonoBehaviour
         enemyAgent.SetDestination(player.position);
     }
 
-    IEnumerator Delay()
+    private IEnumerator Delay()
     {
         yield return new WaitForSecondsRealtime(3.0f);
     }

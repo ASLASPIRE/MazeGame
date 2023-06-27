@@ -30,14 +30,20 @@ public class MazeButtonHandler : MonoBehaviour
        uiManager = FindObjectOfType<UIManager>();
        gameMechanics = FindObjectOfType<GameMechanics>();
     }
-    //deal with keypresses
-    
+
+    /// <summary>
+    /// Sets the text of the button
+    /// </summary>
+    /// <param name="txt">Text to set</param>
     public void SetText(string txt) {
         var child_text = GetComponentInChildren<TextMeshProUGUI>();
         child_text.text = txt;
         _txt = txt;
     }
 
+    /// <summary>
+    /// Handles a MC button click and handles logic according to whether that was the correct answer
+    /// </summary>
     public void HandleClick() {
         if (_ql.AnswerIsCorrect(_txt)) {
             StartCoroutine(CorrectAnswer());
@@ -52,12 +58,16 @@ public class MazeButtonHandler : MonoBehaviour
         SetColor(Color.white);
     }
 
+    /// <summary>
+    /// Sets the color of the button
+    /// </summary>
+    /// <param name="c">Color to set to</param>
     public void SetColor(Color c) {
         var bg = GetComponent<Image>();
         bg.color = c;
     }
 
-    IEnumerator CorrectAnswer()
+    private IEnumerator CorrectAnswer()
     {
         SetColor(Color.green);
         yield return new WaitForSeconds(0.25f);
@@ -73,7 +83,7 @@ public class MazeButtonHandler : MonoBehaviour
         //_ql.LoadRandomQuestion();
     }
 
-    IEnumerator WrongAnswer()
+    private IEnumerator WrongAnswer()
     {
         SetColor(Color.red);
         yield return new WaitForSeconds(0.25f);
@@ -81,6 +91,9 @@ public class MazeButtonHandler : MonoBehaviour
         HandleEndOfPanelLogic();
     }
 
+    /// <summary>
+    /// Upon end of MC panel's duration, destroys the panel, destroys the player's collectible, and resumes gameplay
+    /// </summary>
     public void HandleEndOfPanelLogic()
     {
         uiManager.DestroyGamePanel();

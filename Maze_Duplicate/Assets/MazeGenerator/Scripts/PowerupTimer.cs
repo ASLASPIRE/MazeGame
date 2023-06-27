@@ -47,6 +47,10 @@ public class PowerupTimer : MonoBehaviour
         transform.LookAt(playerCamera.transform);
     }
 
+    /// <summary>
+    /// Restarts the powerup timer
+    /// </summary>
+    /// <param name="durationSeconds">New time to set in seconds</param>
     public void RestartTimer(float durationSeconds)
     {
         timerIsRunning = true;
