@@ -236,7 +236,8 @@ public class Player : MonoBehaviour {
 		}
 		if (other.gameObject.tag.Equals("Powerup_Shield")) {
 			Destroy(other.gameObject);
-			StartCoroutine(StartShieldPowerup(10.0f));
+			ActivateShieldPowerup(10.0f);
+			//StartCoroutine(StartShieldPowerup(10.0f));
 		}
 		if (other.gameObject.tag.Equals("Powerup_Clock")) {
 			Destroy(other.gameObject);
@@ -251,6 +252,18 @@ public class Player : MonoBehaviour {
 		PowerupTimer powerupTimer = shield.GetComponentInChildren<PowerupTimer>();
 		powerupTimer.RestartTimer(durationSeconds);
 		yield return new WaitForSeconds(durationSeconds);
+		shield.SetActive(false);
+	}
+
+	public void ActivateShieldPowerup(float durationSeconds)
+	{
+		shield.SetActive(true);
+		PowerupTimer powerupTimer = shield.GetComponentInChildren<PowerupTimer>();
+		powerupTimer.RestartTimer(durationSeconds);
+	}
+
+	public void DisableShieldPowerup()
+	{
 		shield.SetActive(false);
 	}
 

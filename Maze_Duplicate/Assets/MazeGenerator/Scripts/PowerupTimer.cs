@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PowerupTimer : MonoBehaviour
 {
     public Camera playerCamera;
+    private Player player;
 
     // Timer stuff
     private float startingTime = 10;
@@ -18,7 +19,7 @@ public class PowerupTimer : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
+        player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class PowerupTimer : MonoBehaviour
                 Debug.Log("Powerup time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                player.DisableShieldPowerup();
             }
         }
     }
