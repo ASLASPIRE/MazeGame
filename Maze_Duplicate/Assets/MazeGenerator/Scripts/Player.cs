@@ -39,13 +39,17 @@ public class Player : MonoBehaviour {
     [SerializeField] private bool isFloorTouched = false;
     private int numFloorsTouched = 0;
     private bool isGameplayActive = true;
-    private bool isCoinTouched = false;
+    public bool IsCoinTouched = false;
     private Vector3 cameraEndPoint; // Direction from (0, 0, 0)
     private Vector3 cameraDirection; // Direction from player
 
     // References
-    private GameObject theCollectible;
+    public GameObject CurrentCoinCollectible;
 	public GameObject currentPanel;
+
+	[Header("Managers")]
+	[SerializeField] private UIManager uiManager;
+	[SerializeField] private GameMechanics gameMechanics;
 	
 
 	private void Start()
@@ -81,7 +85,7 @@ public class Player : MonoBehaviour {
 
     private void FixedUpdate()
 	{
-		if (!isGameplayActive)
+		if (!gameMechanics.IsGameplayActive)
 		{
 			return;
 		}
@@ -173,7 +177,8 @@ public class Player : MonoBehaviour {
 			if (shield.activeInHierarchy) return;
 			Debug.Log("touched spike");
 			Instantiate(EnergyExplosion, transform.position, Quaternion.Euler(0, 0, 0));
-			StartCoroutine(RemoveTime(10.0f));
+			//StartCoroutine(RemoveTime(10.0f));
+			uiManager.PlayRemoveTimeAnimation(10.0f);
 			//Timer.timeRemaining -= 10.0f;
 			//TimerDecreaseAnimator.SetTrigger("PlayAnimation");
 		}
@@ -182,7 +187,8 @@ public class Player : MonoBehaviour {
 			if (shield.activeInHierarchy) return;
 			Debug.Log("touched enemy");
 			RandomTeleportPlayer();
-			StartCoroutine(RemoveTime(10.0f));
+			//StartCoroutine(RemoveTime(10.0f));
+			uiManager.PlayRemoveTimeAnimation(10.0f);
 		}
 	}
 
@@ -210,10 +216,10 @@ public class Player : MonoBehaviour {
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.tag.Equals ("Coin")) {
-			if (!isCoinTouched)
+			if (!IsCoinTouched)
             {
-				isCoinTouched = true;
-				theCollectible = other.gameObject;
+				IsCoinTouched = true;
+				CurrentCoinCollectible = other.gameObject;
 				rigidBody.velocity = Vector3.zero;
 				//Destroy(theCollectible);
 				if (audioSource != null && CoinSound != null)
@@ -221,8 +227,11 @@ public class Player : MonoBehaviour {
 					audioSource.PlayOneShot(CoinSound);
 				}
 				// Instantiate game panel
-				isGameplayActive = false;
-				currentPanel = Instantiate(MCGamePanel);
+				gameMechanics.IsGameplayActive = false;
+				Debug.Log("touched coin");
+				//isGameplayActive = false;
+				//currentPanel = Instantiate(MCGamePanel);
+				uiManager.InstantiateGamePanel();
 			}
 		}
 		if (other.gameObject.tag.Equals("Powerup_Shield")) {
@@ -231,7 +240,8 @@ public class Player : MonoBehaviour {
 		}
 		if (other.gameObject.tag.Equals("Powerup_Clock")) {
 			Destroy(other.gameObject);
-			StartCoroutine(AddTime(10.0f));
+			uiManager.PlayAddTimeAnimation(10.0f);
+			//StartCoroutine(AddTime(10.0f));
 		}
 	}
 
@@ -273,14 +283,14 @@ public class Player : MonoBehaviour {
 		if (correct)
 		{
 			Destroy(currentPanel);
-			Destroy(theCollectible);
-			isCoinTouched = false;
+			Destroy(CurrentCoinCollectible);
+			IsCoinTouched = false;
 			isGameplayActive = true;
 		}
 		if (!correct)
 		{
 			Destroy(currentPanel);
-			isCoinTouched = false;
+			IsCoinTouched = false;
 			isGameplayActive = true;
 		}
 	}

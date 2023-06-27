@@ -18,11 +18,17 @@ public class MazeButtonHandler : MonoBehaviour
     private string _txt;
     public float _animationTime = 0.1f;
 
+    [Header("Managers")]
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private GameMechanics gameMechanics;
+
 
     void Awake(){
        _button = GetComponent<Button>();
        _player = FindObjectOfType<Player>();
        _incrementScore = FindObjectOfType<ScoreIncrement>();
+       uiManager = FindObjectOfType<UIManager>();
+       gameMechanics = FindObjectOfType<GameMechanics>();
     }
     //deal with keypresses
     
@@ -55,8 +61,13 @@ public class MazeButtonHandler : MonoBehaviour
     {
         SetColor(Color.green);
         yield return new WaitForSeconds(0.25f);
-        _player.EndPanel(true);
-        _incrementScore.addScore();
+
+        HandleEndOfPanelLogic();
+
+        gameMechanics.addScore(1);
+
+        //_player.EndPanel(true);
+        //_incrementScore.addScore();
         GameObject burst = Instantiate(confetti_, _player.transform.position, Quaternion.identity);
         burst.GetComponent<ParticleSystem>().Play();
         //_ql.LoadRandomQuestion();
@@ -66,6 +77,15 @@ public class MazeButtonHandler : MonoBehaviour
     {
         SetColor(Color.red);
         yield return new WaitForSeconds(0.25f);
-        _player.EndPanel(false);
+        //_player.EndPanel(false);
+        HandleEndOfPanelLogic();
+    }
+
+    public void HandleEndOfPanelLogic()
+    {
+        uiManager.DestroyGamePanel();
+        Destroy(_player.CurrentCoinCollectible);
+        _player.IsCoinTouched = false;
+        gameMechanics.IsGameplayActive = true;
     }
 }

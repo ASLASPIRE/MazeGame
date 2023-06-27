@@ -13,8 +13,10 @@ public class TimerBar : MonoBehaviour
     [Header("Timer parameters")]
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
-
     private float initialTime;
+
+    [Header("Managers")]
+    [SerializeField] private MazeButtonHandler mazeButtonHandler;
 
     // Start is called before the first frame update
     private void Start()
@@ -41,7 +43,8 @@ public class TimerBar : MonoBehaviour
             else
             {
                 Debug.Log("Panel time has run out!");
-                player.EndPanel(false);
+                mazeButtonHandler.HandleEndOfPanelLogic();
+                //player.EndPanel(false);
             }
         }
 
