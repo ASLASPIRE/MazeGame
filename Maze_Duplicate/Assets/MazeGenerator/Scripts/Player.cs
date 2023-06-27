@@ -38,7 +38,6 @@ public class Player : MonoBehaviour {
 
     [SerializeField] private bool isFloorTouched = false;
     private int numFloorsTouched = 0;
-    private bool isGameplayActive = true;
     public bool IsCoinTouched = false;
     private Vector3 cameraEndPoint; // Direction from (0, 0, 0)
     private Vector3 cameraDirection; // Direction from player

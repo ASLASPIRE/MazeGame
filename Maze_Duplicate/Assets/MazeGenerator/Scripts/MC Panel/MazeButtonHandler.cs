@@ -13,7 +13,6 @@ public class MazeButtonHandler : MonoBehaviour
 
     private Button _button;
     private Player _player;
-    private ScoreIncrement _incrementScore; 
 
     private string _txt;
     public float _animationTime = 0.1f;
@@ -26,7 +25,6 @@ public class MazeButtonHandler : MonoBehaviour
     void Awake(){
        _button = GetComponent<Button>();
        _player = FindObjectOfType<Player>();
-       _incrementScore = FindObjectOfType<ScoreIncrement>();
        uiManager = FindObjectOfType<UIManager>();
        gameMechanics = FindObjectOfType<GameMechanics>();
     }
