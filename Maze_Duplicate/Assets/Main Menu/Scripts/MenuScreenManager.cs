@@ -34,13 +34,13 @@ public class MenuScreenManager : MonoBehaviour
         string difficulty = difficultyToggleGroup.ActiveToggles().FirstOrDefault().ToString();
         if (CaseInsensitiveContains(difficulty, "easy"))
         {
-            Globals.difficulty = Difficulty.Easy;
+            Globals.difficulty = MazeRunnerDifficulty.Easy;
         } else if (CaseInsensitiveContains(difficulty, "medium"))
         {
-            Globals.difficulty = Difficulty.Medium;
+            Globals.difficulty = MazeRunnerDifficulty.Medium;
         } else if (CaseInsensitiveContains(difficulty, "hard"))
         {
-            Globals.difficulty = Difficulty.Hard;
+            Globals.difficulty = MazeRunnerDifficulty.Hard;
         } else
         {
             throw new System.Exception("Unknown difficulty selection, ensure name of toggle has difficulty written in it.");

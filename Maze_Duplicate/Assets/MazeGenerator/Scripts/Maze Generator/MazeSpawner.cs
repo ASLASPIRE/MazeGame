@@ -45,7 +45,7 @@ public class MazeSpawner : MonoBehaviour {
 		// Manage settings depending on difficulty selected
 		switch (difficulty)
 		{
-			case Difficulty.Easy:
+			case MazeRunnerDifficulty.Easy:
 				Rows = 20;
 				Columns = 20;
 				MinNumGoals = 20;
@@ -53,7 +53,7 @@ public class MazeSpawner : MonoBehaviour {
 				TotalNumPatrols = 10;
 				TotalNumPowerups = 15;
 				break;
-			case Difficulty.Medium:
+			case MazeRunnerDifficulty.Medium:
 				Rows = 25;
 				Columns = 25;
 				MinNumGoals = 30;
@@ -61,7 +61,7 @@ public class MazeSpawner : MonoBehaviour {
 				TotalNumPatrols = 20;
 				TotalNumPowerups = 15;
 				break;
-			case Difficulty.Hard:
+			case MazeRunnerDifficulty.Hard:
 				Rows = 25;
 				Columns = 25;
 				MinNumGoals = 40;

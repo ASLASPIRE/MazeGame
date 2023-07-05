@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Globals
 {
-    public enum Difficulty
+    public enum MazeRunnerDifficulty
     {
         Easy,
         Medium,
@@ -20,12 +20,7 @@ public class Globals
     }
 
     public static TextAsset vocabJson;
-    public static string vocabSet = "PartsOfTheCell"; // to be deprecated
-    public static Dictionary<string,int> powerup_amts = new Dictionary<string,int>() {
-        {"slow_time", 3},
-        {"multiplier", 3}
-    };
-    public static Difficulty difficulty = Difficulty.Hard;
+    public static MazeRunnerDifficulty difficulty = MazeRunnerDifficulty.Hard;
     public static Vocab vocabList = Vocab.Chemistry;
 
 }

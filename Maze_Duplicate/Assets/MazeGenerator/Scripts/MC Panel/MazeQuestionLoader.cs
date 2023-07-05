@@ -43,10 +43,6 @@ public class MazeQuestionLoader : MonoBehaviour
         {
             jsonFile = Globals.vocabJson;
         }
-        if (Globals.vocabSet != null)
-        {
-            vocabSet = Globals.vocabSet;
-        }
 
         // Update the vocab set name and contents depending on value set by player in Globals
         // gifController.UpdateVocabSet(vocabSet);
